@@ -4,24 +4,24 @@ $carbon--theme: $carbon--theme--g100;
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
-$dark: #243447;
+
 a {
   color: $text-04;
 }
 
 .bx--side-nav__navigation {
-  background-color: $dark;
+  background-color: $ui-background;
 }
 
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
-  background-color: $dark;
+  background-color: $ui-01;
   color: $text-04;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover {
-  background-color: $dark;
+  background-color: $ui-01;
   color: $text-04;
 }
 
