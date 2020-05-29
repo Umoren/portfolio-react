@@ -6,28 +6,24 @@ import Work from './Work';
 import Education from './Education';
 
 const Pages = ({ user }) => {
-    return (
-        <Router>
-            <Switch>
-                <Route exact path="/">
-                    <AboutMe user={user} />
-                </Route>
-
-                <Route exact path="/">
-                    <Projects user={user} />
-                </Route>
-
-                <Route exact path="/">
-                    <Work user={user} />
-                </Route>
-
-                <Route exact path="/">
-                    <Education user={user} />
-                </Route>
-
-            </Switch>
-        </Router>
-    )
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <AboutMe user={user} />
+        </Route>
+        <Route path="/projects">
+          <Projects user={user} />
+        </Route>
+        <Route path="/work">
+          <Work user={user} />
+        </Route>
+        <Route path="/education">
+          <Education user={user} />
+        </Route>
+      </Switch>
+    </Router>
+  );
 };
 
 export default Pages;

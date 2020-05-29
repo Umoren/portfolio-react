@@ -3,6 +3,7 @@ import Sidebar from '../Sidebar';
 import UserHeader from '../UserHeader';
 import MobileNav from '../MobileNav';
 import { StyledContent } from './styles';
+import Footer from '../Footer';
 
 const Layout = ({ user, children }) => {
     return (
@@ -13,6 +14,7 @@ const Layout = ({ user, children }) => {
                 <UserHeader user={user} />
                 <div> {children}</div> 
             </StyledContent>
+            <Footer user={user} />
         </>
     );
 };
