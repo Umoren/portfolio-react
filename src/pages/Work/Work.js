@@ -9,7 +9,7 @@ const Work = ({ user }) => {
     <Layout user={user}>
       <div>
         <SectionTitle>Work</SectionTitle>
-        <h5>I am Poor and Unemployed. Just Vibes and VS Code. Save me.  </h5> 
+        <p> Currently Unemployed and open to Internships. </p> 
         <ul>
           {user.work.map((work, i) => (
             <WorkItem key={i}>
